@@ -13,7 +13,7 @@ function Select({ name, id, options, onChange }: SelectInterface) {
             onChange={(event) => onChange(event.target.value)}
             name={name}
             id={id}
-            className="border p-2 rounded"
+            className="bg-gradient-to-br from-white to-rose-50 border p-2 rounded focus:ring focus:ring-offset-0 focus:ring-rose-500 text-rose-500 font-semibold"
         >
             {options.map((option: SelectOptionInterface, index: number) => {
                 return (

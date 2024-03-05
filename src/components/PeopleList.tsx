@@ -24,7 +24,7 @@ export default function PeopleList({
     }
 
     return (
-        <div className="w-full grid grid-cols-3 gap-5">
+        <div className="w-full grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 max-xl::grid-cols-5 max-sm:grid-cols-1 gap-5">
             {people.map((person: PersonInterface, key: number) => {
                 return (
                     <Person

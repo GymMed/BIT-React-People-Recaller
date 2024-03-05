@@ -4,6 +4,7 @@ import { SortingEnum, sortingEnumAsString } from "../../enums/sortingEnum";
 import { PersonInterface } from "../../interfaces/personInterface";
 import { SelectOptionInterface } from "../../interfaces/selectOptionInterface";
 import Select from "../General/Select";
+import FullSelect from "../General/Inputs/FullSelect";
 
 interface FilterInterface {
     people: Array<PersonInterface>;
@@ -177,20 +178,24 @@ export default function Filter({ people, setPeople }: FilterInterface) {
     }
 
     return (
-        <div className="w-full flex items-center justify-center gap-5">
-            <Select
+        <div className="w-full flex items-center justify-center gap-5 max-md:flex-row max-sm:flex-col">
+            <FullSelect
+                text="Filter by gender :"
                 id="genderFilter"
                 name="genderFilter"
                 options={genders}
                 onChange={handlerSelectOnChangeGender}
             />
-            <Select
+
+            <FullSelect
+                text="Order names by:"
                 id="nameSorter"
                 name="nameSorter"
                 options={sorters}
                 onChange={handlerSelectOnChangeSortByName}
             />
-            <Select
+            <FullSelect
+                text="Filter by country:"
                 id="countryFilter"
                 name="countryFilter"
                 options={availableCountries}

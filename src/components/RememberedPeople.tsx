@@ -11,7 +11,7 @@ function RememberedPeople({
     onForgetPerson,
 }: RememberedPeopleInterface) {
     return (
-        <div className="grid grid-cols-3 gap-5">
+        <div className="w-full grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 max-xl::grid-cols-5 max-sm:grid-cols-1 gap-5">
             {people.map((person, index) => {
                 return (
                     <Person
