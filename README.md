@@ -8,4 +8,4 @@ Simple react SPA application thats let's you remember your people! People recall
 
 ## Project Online
 
--   [View](https://gymmed.github.io/BIT-React-Vehicle-Rent-CRUD/)
+-   [View](https://gymmed.github.io/BIT-React-People-Recaller/)
