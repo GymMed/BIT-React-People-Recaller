@@ -3,7 +3,6 @@ import { GendersEnum, gendersEnumAsString } from "../../enums/gendersEnum";
 import { SortingEnum, sortingEnumAsString } from "../../enums/sortingEnum";
 import { PersonInterface } from "../../interfaces/personInterface";
 import { SelectOptionInterface } from "../../interfaces/selectOptionInterface";
-import Select from "../General/Select";
 import FullSelect from "../General/Inputs/FullSelect";
 
 interface FilterInterface {
